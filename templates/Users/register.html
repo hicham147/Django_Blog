@@ -18,7 +18,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #080710;
+    background-color: #1732ff;
 }
 .background{
     width: 430px;
@@ -44,11 +44,9 @@ body{
 }
 .shape:last-child{
     background: linear-gradient(
-        to right,
-        #ff512f,
-        #f09819
-    );
-    right: -30px;
+    #e66465, 
+    #9198e5);
+    right: -80px;
     bottom: -80px;
 }
 form{
@@ -63,7 +61,7 @@ form{
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255,255,255,0.1);
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
-    padding: 50px 35px;
+    padding: 30px 35px;
 }
 form *{
     font-family: 'Poppins',sans-serif;
@@ -161,8 +159,8 @@ button{
         <button type="submit" class="btn btn-primary">Register Account</button> 
         
         <div class="d-flex justify-content-center links" >
-            Already Have an Account ?<a href="#"
-            class = "ml-2"> Login</a>
+            Already Have an Account ?<a href={% url 'signIn'%}
+            class = "ml-2"> Sign in</a>
 
             </a>
 
@@ -170,7 +168,6 @@ button{
     </form>
 </body>
 </html>
-
 
 
 
