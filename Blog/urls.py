@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('register/',v.register,name='blog-register'),
     path('profile/',v.profile,name='profile'),
+    path('editprofile/',v.EditProfile,name='editprofile'),
     path('signin/',signin_views.LoginView.as_view(template_name='Users/login.html'),name='signIn'),
     path('Signout/',signin_views.LogoutView.as_view(template_name='Users/logout.html'),name='signout'),
     path('',include('Myapp.urls'))

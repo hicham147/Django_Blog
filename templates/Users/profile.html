@@ -78,7 +78,7 @@
     </div>
     <div class="profile-name"> {{user.username}}</div>
     <p class="about">{{user.email}}<br></p>
-    <button class="msg-btn">Edit</button>
+    <button class="msg-btn" onclick="document.location={% url 'editprofile'%}">Edit</button>
     <button class="follow-btn">Following</button>
     <div>
       <i class="fab fa-facebook-f"></i>
